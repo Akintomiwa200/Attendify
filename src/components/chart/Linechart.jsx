@@ -12,9 +12,9 @@ const data = [
 ];
 
 const Linechart = () => (
-    <div className="">
+    <div className=" w-[80vw] lg:w-full">
 
-        <LineChart width={850} height={320} data={data}>
+        <LineChart width={600} height={300} data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />
             <YAxis />

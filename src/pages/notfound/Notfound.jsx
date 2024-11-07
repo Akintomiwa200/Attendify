@@ -21,7 +21,7 @@ const Notfound = () => {
                 <p className='m-0 p-0 text-3xl lg:text-[5em] bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent animate-move'>
                     Page Not Found
                 </p>
-                <Button onClick={handleBack} name="Back to Previous Page" />
+                <Button className="my-8" onClick={handleBack} name="Back to Previous Page" />
             </div>
         </>
     )

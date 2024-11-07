@@ -33,8 +33,8 @@ const AdminReport = () => {
 
 
     return (
-        <div className="flex flex-col w-[100vw] lg:w-[85vw] items-center">
-            <div className="h-[20vh] w-[70vw] flex justify-between items-center  ">
+        <div className="w-full md:h-[90vh] lg:w-[87vw] min-h-[90vh] flex flex-col items-center mx-auto">
+            <div className="h-[20vh]  lg:w-[70vw] flex justify-between items-center  ">
                 <div>
                     <h1 className='text-xl text-blue-600'>Attendance</h1>
                     <h3>
@@ -45,13 +45,13 @@ const AdminReport = () => {
 
             </div>
             <div className="flex justify-evenly lg:w-[80vw] gap-2 my-8">
-                <div className="flex gap-2 bg-white h-[15vh] w-[70vw] items-center pl-8">
+                <div className="flex flex-col md:flex-row gap-2 bg-white h-auto w-[60vw] md:h-[15vh] lg:w-[70vw] md:w-[90vw] items-center lg:pl-8 py-8 md:px-4 ">
                     <Course onChange={handleCourseChange} />
                     <Subject onChange={handleStatusChange} />
                     <Section onChange={handleClassChange} />
                     <Month onChange={handleMonthChange} />
                     <Year onChange={handleYearChange} />
-                    <Button onClick={handleGenerateSheet} width='w-[10vw]' className="mt-6" name='Generate Sheet' />
+                    <Button onClick={handleGenerateSheet} width='lg:w-[10vw]' className="mt-6 px-4" name='Generate Sheet' />
                 </div>
             </div>
             {/* <div className="w-[90vw] lg:w-[70vw] h-auto py-16 mt-16 px-16 bg-white">

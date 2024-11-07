@@ -32,7 +32,7 @@ const Header3 = () => {
                 <div className='flex justify-center self-center gap-[15px]'>
                     <div className='flex items-center justify-center'>
                         <div className='relative flex items-center justify-center'>
-                            <IoMdNotificationsOutline className='text-[2em] cursor-pointer' onClick={toggleNotification} />
+                            <IoMdNotificationsOutline className='lg:text-[2em] cursor-pointer' onClick={toggleNotification} />
                             {notifications.length > 0 && (
                                 <span className='bg-blue-700 w-4 h-4 absolute translate-x-2 rounded-full mb-8'></span>
                             )}
@@ -55,12 +55,12 @@ const Header3 = () => {
                         <span className='bg-blue-700 w-4 h-4 absolute translate-x-2 rounded-full mb-8'></span>
                     </div>
                     <div className='flex items-center justify-center'>
-                        <FaRegMessage className='text-[2em]' />
+                        <FaRegMessage className='lg:text-[2em] text-xl' />
                         <span className='bg-blue-700 w-4 h-4 absolute translate-x-2 rounded-full mb-8'></span>
                     </div>
 
                     <img src='' className='h-8 w-8 lg:h-[2.5em] lg:w-[2.5em] rounded-full border-2 border-grey-900' alt='img' />
-                    <h3 className='text-sm lg:text-[1.1em]'>Akintomiwa</h3>
+                    <h3 className='lg:text-sm text-xs lg:text-[1.1em]'>Akintomiwa</h3>
                 </div>
             </div>
         </>

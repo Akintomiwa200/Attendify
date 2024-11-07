@@ -5,8 +5,8 @@ import Button from "../../../components/button/Button"
 import { NavLink } from "react-router-dom"
 const AdminTeacher = () => {
     return (
-        <div className="w-100vw lg:w-[87vw] flex flex-col items-center">
-            <div className="h-[20vh] w-[70vw] flex justify-between items-center  ">
+        <div className="w-full md:h-[90vh] min-h-[90vh]  lg:w-[87vw] flex flex-col items-center">
+            <div className="h-[20vh] w-[90vw] md:w-[70vw] flex justify-between items-center  ">
                 <div>
                     <h1 className='text-xl text-blue-600'>Teacher</h1>
                     <h3>
@@ -14,14 +14,14 @@ const AdminTeacher = () => {
                         Teacher
                     </h3>
                 </div>
-                <NavLink to='/admin/addteacher'><Button name='Add Teacher' width='w-[10vw]' /></NavLink>
+                <NavLink to='/admin/addteacher'><Button className=" py-[1em] px-[3em] bg-blue-900 text-white cursor-pointer hover:bg-blue-600 text-sm lg:text-xl hover:text-black hover:scale-1000 border-none" name='Add Teacher' width='lg:w-[10vw]' /></NavLink>
             </div>
             <div className="w-[90vw] lg:w-[70vw] h-auto py-8 bg-white flex flex-col justify-center items-center">
-                <div className="flex justify-between w-[70vw] px-8 h-[10vh] items-center">
+                <div className="flex justify-between w-[90vw] lg:w-[70vw] px-8 h-[10vh] items-center">
                     <h2 className='text-blue-800 font-bold'>Current Teacher</h2>
                     <Input width='20vw' placeholder='search Teacher' />
                 </div>
-                <table className="w-[65vw] border-white border-collapse px-8">
+                <table className="w-[65vw] border-white border-collapse px-8 text-sm md:text-xl ">
                     <thead>
                         <tr className='bg-gray-200 h-[2.5em]'>
                             <th className=' '>#</th>
@@ -33,7 +33,7 @@ const AdminTeacher = () => {
                             <th className=''>Action</th>
                         </tr>
                     </thead>
-                    <tbody id="tableBody" className="">
+                    <tbody id="tableBody" className=" text-xs md:text-xl">
                         <tr className=' bg-gray-100 h-[2.5em]'>
                             <td className=' text-center'>Patient</td>
                             <td className=' text-center'>Date</td>

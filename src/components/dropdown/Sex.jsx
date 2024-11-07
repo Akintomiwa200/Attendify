@@ -9,11 +9,10 @@ const Sex = () => {
 
     return (
         <div>
-            <h2>Select Sex</h2>
             <Dropdown
                 menuItems={menuItems}
                 name="Select Sex"
-                width="w-[30vw]" // Adjust width as needed
+                width="w-[40vw]" // Adjust width as needed
             />
         </div>
     );

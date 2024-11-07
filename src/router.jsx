@@ -22,6 +22,7 @@ import AddTeacher from "./pages/admin/teacher/AddTeacher";
 import AddSubject from "./pages/admin/subject/AddSubject";
 import AddStudent from "./pages/admin/student/AddStudent";
 import AddStudentByTeacher from "./pages/teacher/student/AddStudentByTeacher";
+import About from "./pages/about/About";
 
 
 
@@ -46,7 +47,10 @@ const router = createBrowserRouter([
         path: '/signup',
         element: <SignUp />
       },
-
+      {
+        path: '/about',
+        element: <About />
+      }
     ],
   },
 

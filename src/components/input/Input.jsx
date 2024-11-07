@@ -23,13 +23,13 @@ Input.propTypes = {
   type: PropTypes.string,
 };
 
-// // Default props
-// Input.defaultProps = {
-//   width: 'w-[80vw] lg:w-[30vw]',
-//   placeholder: 'Enter text...',
-//   onChange: () => { },
-//   value: '',
-//   type: 'text',
-// };
+// Default props
+Input.defaultProps = {
+  width: 'w-[80vw] lg:w-[30vw]',
+  placeholder: 'Enter text...',
+  onChange: () => { },
+  value: '',
+  type: 'text',
+};
 
 export default Input;

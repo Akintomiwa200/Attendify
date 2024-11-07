@@ -28,10 +28,18 @@ Dropdown.propTypes = {
     width: PropTypes.string,
 };
 
-// // Default props
-// Dropdown.defaultProps = {
-//     name: 'Select an option',
-//     width: 'w-[30vw]', // Default width
-// };
+// Default props
+Dropdown.defaultProps = {
+    name: 'Select an option',
+
+    // // Default props
+    // Dropdown.defaultProps = {
+    //     width: 'w-[80vw] lg:w-[30vw]',
+    //     placeholder: 'Enter text...',
+    //     onChange: () => { },
+    //     value: '',
+    //     type: 'text',
+    // } // Default width
+};
 
 export default Dropdown;

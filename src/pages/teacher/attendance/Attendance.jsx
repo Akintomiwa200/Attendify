@@ -35,15 +35,15 @@ const Attendance = () => {
     return (
         <div className="flex flex-col w-[100vw] lg:w-[85vw] items-center">
             <div className="flex justify-evenly lg:w-[80vw] gap-2 my-8">
-                <div className="flex gap-2 bg-white h-[15vh] w-[70vw] items-center pl-8">
+                <div className="flex gap-2 bg-white md:h-[15vh] md:w-[70vw] py-4 w-[60vw] flex-col md:flex-row items-center md:pl-8">
                     <Subject onChange={handleStatusChange} />
                     <Section onChange={handleClassChange} />
                     <Dateset onChange={handleMonthChange} />
-                    <Button onClick={handleGenerateSheet} className="mt-6" width="w-[10vw]" name='Generate Sheet' />
+                    <Button onClick={handleGenerateSheet} className="mt-6 px-4" width="lg:w-[10vw]" name='Generate Sheet' />
                 </div>
             </div>
-            <div className="w-[90vw] lg:w-[70vw] h-auto py-16 mt-16 px-16 bg-white">
-                <table className="w-full border-white border-collapse">
+            <div className="w-[90vw] lg:w-[70vw] h-auto py-16 mt-16 px-4 lg:px-16 bg-white">
+          <table className="w-full border-white border-collapse">
                     <thead>
                         <tr className='bg-blue-100 h-[2.5em]'>
                             <th className=''>#</th>

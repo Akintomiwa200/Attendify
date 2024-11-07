@@ -69,10 +69,10 @@ const SignUp = () => {
                         </label>
                         <div className='flex gap-4'>
                             <label className='flex flex-col my-[0.5em]'>
-                                Sex: <Sex />
+                                Sex: <Sex  className="w-[40vw]"/>
                             </label>
                             <label className='flex flex-col my-[0.5em]'>
-                                Sex: <Sex/>
+                                Sex: <Sex />
                             </label>
                         </div>
                         <label className='flex flex-col my-[0.5em]'>

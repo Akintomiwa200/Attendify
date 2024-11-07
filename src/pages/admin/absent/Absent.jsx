@@ -4,7 +4,7 @@ import Input from '../../../components/input/Input'
 
 const Absent = () => {
   return (
-    <div className="w-100vw lg:w-[87vw] flex flex-col items-center overflow-x-hidden sm:min-h-[100vh]">
+    <div className="w-100vw lg:w-[87vw] flex flex-col items-center overflow-x-hidden min-h-[90vh] md:h-[90vh] mx-auto">
       <div className="h-[20vh] w-[90vw] lg:w-[70vw] flex justify-between items-center  ">
         <div>
           <h1 className='text-xs lg:text-xl text-blue-600'>Absence</h1>

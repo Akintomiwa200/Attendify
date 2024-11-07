@@ -22,12 +22,12 @@ Button.propTypes = {
   className: PropTypes.string,
 };
 
-// Button.defaultProps = {
-//   children: null,
-//   width: 'w-[80vw] lg:w-[30vw]',
-//   onClick: () => { },
-//   name: '',
-//   className: '',
-// };
+Button.defaultProps = {
+  children: null,
+  width: 'w-[80vw] lg:w-[30vw]',
+  onClick: () => { },
+  name: '',
+  className: '',
+};
 
 export default Button;

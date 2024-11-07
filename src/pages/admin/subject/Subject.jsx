@@ -74,8 +74,8 @@ const Subject = () => {
     };
 
     return (
-        <div className="w-full lg:w-[87vw] flex flex-col items-center">
-            <div className="h-[20vh] w-[70vw] flex justify-between items-center">
+        <div className="w-full lg:w-[87vw] flex flex-col items-center min-h-[90vh]">
+            <div className="h-[20vh] w-[90vw] lg:w-[70vw] flex justify-between items-center">
                 <div>
                     <h1 className="text-xl text-blue-600">Subject</h1>
                     <h3>
@@ -84,19 +84,19 @@ const Subject = () => {
                     </h3>
                 </div>
 
-                <Button onClick={handleClick} className="py-[1em] px-[3em] bg-blue-900 text-white cursor-pointer hover:bg-blue-600 hover:text-black hover:scale-1000 border-none" width="w-[12vw]">
+                <Button onClick={handleClick} className="py-[1em] px-[3em] bg-blue-900 text-white cursor-pointer hover:bg-blue-600 hover:text-black hover:scale-1000 border-none" width="lg:w-[12vw]">
                     Add Subject
                 </Button>
 
             </div>
             <div className="w-[90vw] lg:w-[70vw] h-auto py-8 bg-white flex flex-col justify-center items-center">
-                <div className="flex justify-between w-[70vw] px-8 h-[10vh] items-center">
+                <div className="flex justify-between w-[90vw] md:w-[70vw] px-8 h-[10vh] items-center">
                     <h2 className="text-blue-800 font-bold">Current Student</h2>
                     <Input placeholder="Search..." width="w-[20vw]" />
                 </div>
-                <table className="w-[65vw] border-white border-collapse px-8">
+                <table className="w-[90vw] md:w-[65vw] border-white border-collapse px-8">
                     <thead>
-                        <tr className="bg-gray-200 h-[2.5em]">
+                        <tr className="bg-gray-200 h-[2.5em] text-sm md:text-xl">
                             <th className="text-center">#</th>
                             <th className="text-center">Subject Name</th>
                             <th className="text-center">Course</th>
@@ -105,7 +105,7 @@ const Subject = () => {
                             <th className="text-center">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="text-xs md:text-xl">
                         {students.map((student, index) => (
                             <tr key={student.id} className={index % 2 === 0 ? "bg-gray-100 h-[2.5em]" : "h-[2.5em]"}>
                                 <td className="text-center">{index + 1}</td>
